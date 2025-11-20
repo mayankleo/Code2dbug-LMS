@@ -7,6 +7,7 @@ import {
   Settings,
   HelpCircle,
   LogOut,
+  Megaphone,
 } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import { cn } from '../lib/utils';
@@ -47,7 +48,7 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink
-              to="/admin/courses"
+              to="/admin/analytics"
               className={({ isActive }) =>
                 cn(
                   'flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors',
@@ -55,8 +56,8 @@ const Sidebar = () => {
                 )
               }
             >
-              <BookOpen className="w-5 h-5" />
-              <span className="font-medium">Courses</span>
+              <BarChart3 className="w-5 h-5" />
+              <span className="font-medium">Analytics</span>
             </NavLink>
           </li>
           <li>
@@ -75,7 +76,7 @@ const Sidebar = () => {
           </li>
           <li>
             <NavLink
-              to="/admin/analytics"
+              to="/admin/courses"
               className={({ isActive }) =>
                 cn(
                   'flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors',
@@ -83,8 +84,22 @@ const Sidebar = () => {
                 )
               }
             >
-              <BarChart3 className="w-5 h-5" />
-              <span className="font-medium">Analytics</span>
+              <BookOpen className="w-5 h-5" />
+              <span className="font-medium">Courses</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/admin/announcements"
+              className={({ isActive }) =>
+                cn(
+                  'flex items-center space-x-3 px-4 py-3 text-gray-700 rounded-lg hover:bg-gray-100 transition-colors',
+                  isActive && 'text-blue-600 bg-blue-50',
+                )
+              }
+            >
+              <Megaphone className="w-5 h-5" />
+              <span className="font-medium">Announcements</span>
             </NavLink>
           </li>
           <li>

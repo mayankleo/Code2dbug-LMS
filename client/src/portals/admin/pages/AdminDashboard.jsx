@@ -3,8 +3,6 @@ import DashboardHeader from '../components/DashboardHeader';
 import FilterSection from '../components/FilterSection';
 import StatsCardsSection from '../components/StatsCardsSection';
 import EnrollmentsTable from '../components/EnrollmentsTable';
-import TopBar from '../components/TopBar';
-import Sidebar from '../components/Sidebar';
 import ColumnWithRotatedLabels from '../components/ColumnWithRotatedLabels';
 import DoughnutChart from '../components/DoughnutChart';
 

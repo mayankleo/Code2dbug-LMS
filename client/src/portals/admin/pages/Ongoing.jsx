@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/Sidebar.jsx';
-import TopBar from '../components/TopBar.jsx';
 import StatisticsSection from '../components/StatisticsSection.jsx';
 import StudentsTable from '../components/StudentsTable.jsx';
 
