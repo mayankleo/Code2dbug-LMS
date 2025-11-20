@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.DS_Store
+
+# Server
+server/node_modules/
+server/.env
+server/public/uploads/
+
+# Client
+client/node_modules/
+client/dist/
+client/.env.local
+.env
